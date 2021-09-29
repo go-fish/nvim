@@ -21,7 +21,8 @@ local function load_core()
     vim.g.edge_show_eob = 1
     vim.g.edge_better_performance = 1
     vim.g.edge_transparent_background = 1
-    vim.cmd [[colorscheme edge]]
+
+    vim.cmd [[colorscheme PaperColor]]
 end
 
 load_core()

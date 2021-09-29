@@ -97,6 +97,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/edge"
   },
+  fzf = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/fzf"
+  },
+  ["fzf-lsp.nvim"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/fzf-lsp.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -116,6 +124,10 @@ _G.packer_plugins = {
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
+  },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim"
   },
   ["lsp_signature.nvim"] = {
     loaded = true,
@@ -204,6 +216,10 @@ _G.packer_plugins = {
   ["twilight.nvim"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/twilight.nvim"
+  },
+  ["vim-one"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/vim-one"
   }
 }
 

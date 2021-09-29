@@ -12,7 +12,7 @@ M.on_attach = function(_, bufnr)
         fix_pos = true,
         hint_enable = true,
         hi_parameter = "Search",
-        handler_opts = {"double"}
+        handler_opts = {"shadow"}
     })
 
     api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')

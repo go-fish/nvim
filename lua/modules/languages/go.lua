@@ -7,7 +7,7 @@ M.Setup = function()
     local mapping = require("core.mapping")
 
     mapping.Bind("n", "<C-g>", "<cmd>!gocmt -i -d %:p<CR>")
-    mapping.Bind("n", "<C-v>", "<cmd>!gotests -exported -w %:p<CR>")
+    mapping.Bind("n", "<C-h>", "<cmd>!gotests -exported -w %:p<CR>")
 end
 
 M.lsp = coq.lsp_ensure_capabilities {

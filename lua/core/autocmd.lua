@@ -5,8 +5,9 @@ augroup(
     [[
 augroup config
     autocmd!
-    autocmd BufWritePre * lua vim.lsp.buf.formatting()
-    autocmd InsertLeave * lua vim.lsp.buf.formatting()
+    autocmd BufWritePost * :silent! lua vim.lsp.buf.formatting()
+    autocmd InsertLeave * :silent! lua vim.lsp.buf.formatting()
+    autocmd BufWritePost *.go lua require'core.function'.goimports(1000)
     autocmd VimEnter * CHADopen --nofocus
     autocmd FileType CHADtree setlocal number relativenumber
 augroup END        
