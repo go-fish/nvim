@@ -1,5 +1,5 @@
 local lsp = require("modules.languages.lsp")
-local coq = require("coq")
+--local coq = require("coq")
 local M = {}
 
 M.Setup = function()
@@ -10,7 +10,8 @@ M.Setup = function()
     mapping.Bind("n", "<C-h>", "<cmd>!gotests -exported -w %:p<CR>")
 end
 
-M.lsp = coq.lsp_ensure_capabilities {
+--M.lsp = coq.lsp_ensure_capabilities {
+M.lsp = {   
     capabilities = lsp.capabilities,
     cmd = { "gopls", "serve" },
     settings = {

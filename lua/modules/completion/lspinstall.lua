@@ -37,8 +37,7 @@ M.Setup = function()
             local state = vim.loop.fs_stat(server_path)
 
             if state then
-                local m = require("modules.languages." .. server)
-                local coq = require("coq")
+                local m = require("modules.languages." ..server)
 
                 if type(m) == "table" and m.lsp ~= nil then
                     lspconfig[server].setup{m.lsp}

@@ -81,13 +81,29 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/chadtree"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-path"
+  },
+  ["cmp-spell"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-spell"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
+  },
   ["coq.artifacts"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq.artifacts"
-  },
-  coq_nvim = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq_nvim"
   },
   ["dashboard-nvim"] = {
     loaded = true,
@@ -152,6 +168,10 @@ _G.packer_plugins = {
   ["nvim-bufferline.lua"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
   ["nvim-gps"] = {
     loaded = true,
