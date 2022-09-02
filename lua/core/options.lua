@@ -11,6 +11,7 @@ local function load_options()
         selection = "inclusive",
         wildmenu = true,
         mousemodel = "popup",
+        encoding = "utf-8",
 
         -- font
         guifont = "Courier Prime Code,Monaco,Menlo,Courier New,monospace",
@@ -19,7 +20,9 @@ local function load_options()
         syntax = "on",
         termguicolors = true,
         foldenable = true, -- 允许折叠
-        foldmethod = "manual", -- 手动折叠
+        foldmethod = "expr", -- 手动折叠
+        foldexpr = "nvim_treesitter#foldexpr()",
+        foldlevel = 99,
 
         -- tab
         tabstop = 4, -- tab 宽度
@@ -27,8 +30,8 @@ local function load_options()
         shiftwidth = 4, -- 缩进
         expandtab = true, -- 空格代替tab
         autoindent = true, -- 自动缩进
-        number = true, -- 显示行号
-        history = 2000,
+        relativenumber = true, -- 显示行号
+        history = 10000,
         -- 搜索逐字符高亮
         hlsearch = true,
         incsearch = true,
@@ -69,3 +72,4 @@ local function load_options()
 end
 
 load_options()
+

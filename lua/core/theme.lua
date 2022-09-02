@@ -56,3 +56,4 @@ M.lspKindIcons = {
 }
 
 return M
+

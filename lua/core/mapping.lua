@@ -13,7 +13,9 @@ end
 M.Load = function()
     -- ingore esc
     api.nvim_set_keymap("i", "<C-c>", "<ESC>", { noremap = true })
-    api.nvim_set_keymap("n", "<Leader>d", ":bprevious <bar> bdelete #<CR>", { noremap = true })
+    api.nvim_set_keymap("n", "k", "10k", {noremap = true})
+    api.nvim_set_keymap("n", "j", "10j", {noremap = true})
 end
 
 return M
+

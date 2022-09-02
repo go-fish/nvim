@@ -1,21 +1,12 @@
 local api = vim.api
+local mapping = require("core.mapping")
 
 local M = {}
 
-M.on_attach = function(_, bufnr)
-    local lspsignature = require("lsp_signature")
-
-    lspsignature.on_attach({
-        bind = true,
-        use_lspsaga = false,
-        floating_window = true,
-        fix_pos = true,
-        hint_enable = true,
-        hi_parameter = "Search",
-        handler_opts = {"double"}
-    })
-
+M.on_attach = function(client, bufnr)
     api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+    local bufopts = { noremap=true, silent=true, buffer=bufnr }
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
 end
 
 M.capabilities = vim.lsp.protocol.make_client_capabilities()

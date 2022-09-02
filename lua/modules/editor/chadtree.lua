@@ -1,9 +1,9 @@
 local M = {}
 
-M.Object = {"ms-jpq/chadtree"}
+M.Object = { "ms-jpq/chadtree", run = ":CHADdeps" }
 
-M.Setup = function()
+-- M.Setup = function()
    
-end
+-- end
 
 return M

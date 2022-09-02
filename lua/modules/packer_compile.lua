@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -69,177 +69,105 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
+  ["OneTerm.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/LuaSnip"
-  },
-  aurora = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/aurora"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/OneTerm.nvim",
+    url = "https://github.com/LoricAndre/OneTerm.nvim"
   },
   chadtree = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/chadtree"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/chadtree",
+    url = "https://github.com/ms-jpq/chadtree"
   },
-  ["cmp-buffer"] = {
+  coq_nvim = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    url = "https://github.com/ms-jpq/coq_nvim"
   },
-  ["cmp-nvim-lsp"] = {
+  ["dap-buddy.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
-  },
-  ["cmp-path"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-path"
-  },
-  ["cmp-spell"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp-spell"
-  },
-  cmp_luasnip = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
-  },
-  ["coq.artifacts"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq.artifacts"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/dap-buddy.nvim",
+    url = "https://github.com/Pocco81/dap-buddy.nvim"
   },
   ["dashboard-nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
   },
-  edge = {
+  ["fidget.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/edge"
-  },
-  fzf = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/fzf"
-  },
-  ["fzf-lsp.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/fzf-lsp.nvim"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["glow.nvim"] = {
+  ["lspsaga.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/glow.nvim"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
   },
-  ["grammar-guard.nvim"] = {
+  ["mini.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/grammar-guard.nvim"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
   },
-  ["gruvbox-material"] = {
+  neon = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gruvbox-material"
-  },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
-  },
-  ["lsp-colors.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim"
-  },
-  ["lsp_signature.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lush.nvim"
-  },
-  ["markdown-preview.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
-  },
-  ["nvim-autopairs"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/neon",
+    url = "https://github.com/rafamadriz/neon"
   },
   ["nvim-bufferline.lua"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
+    url = "https://github.com/akinsho/nvim-bufferline.lua"
   },
-  ["nvim-cmp"] = {
+  ["nvim-dap"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
-  ["nvim-gps"] = {
+  ["nvim-dap-go"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-gps"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    url = "https://github.com/leoluz/nvim-dap-go"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
-  },
-  ["nvim-lspinstall"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
-  },
-  ["nvim-treesitter-context"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context"
-  },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["papercolor-theme"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/papercolor-theme"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    url = "https://github.com/NLKNguyen/papercolor-theme"
   },
-  ["plenary.nvim"] = {
+  ["seoul256.vim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/seoul256.vim",
+    url = "https://github.com/junegunn/seoul256.vim"
   },
-  ripgrep = {
+  ["structrue-go.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/ripgrep"
-  },
-  ["symbols-outline.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim"
-  },
-  ["tabout.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/tabout.nvim"
-  },
-  ["telescope-fzf-native.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/telescope.nvim"
-  },
-  ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/toggleterm.nvim"
-  },
-  ["twilight.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/twilight.nvim"
-  },
-  ["vim-one"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/vim-one"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/structrue-go.nvim",
+    url = "https://github.com/crusj/structrue-go.nvim"
   }
 }
 
@@ -249,5 +177,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

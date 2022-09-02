@@ -1,5 +1,5 @@
 local lsp = require("modules.languages.lsp")
---local coq = require("coq")
+-- local coq = require("coq")
 local M = {}
 
 M.Setup = function()
@@ -10,8 +10,8 @@ M.Setup = function()
     mapping.Bind("n", "<C-h>", "<cmd>!gotests -exported -w %:p<CR>")
 end
 
---M.lsp = coq.lsp_ensure_capabilities {
-M.lsp = {   
+-- M.lsp = coq.lsp_ensure_capabilities {
+M.lsp = {
     capabilities = lsp.capabilities,
     cmd = { "gopls", "serve" },
     settings = {
@@ -24,5 +24,8 @@ M.lsp = {
     },
     on_attach = lsp.on_attach,
 }
+
+-- https://github.com/williamboman/nvim-lsp-installer
+M.lspserver = "gopls"
 
 return M
