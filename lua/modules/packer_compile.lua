@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["onedarkpro.nvim"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
+  },
   ["papercolor-theme"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/papercolor-theme",

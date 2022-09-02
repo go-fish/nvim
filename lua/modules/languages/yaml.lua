@@ -6,7 +6,7 @@ M.lsp = {
     on_attach = lsp.on_attach,
     settings = {
         yaml = {
-           schemas = { kubernetes = "globPattern" },
+           schemas = { kubernetes = "/*.yaml" },
         }
     },
 }
