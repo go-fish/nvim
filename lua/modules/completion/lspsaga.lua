@@ -8,7 +8,7 @@ M.Setup = function()
 
     saga.init_lsp_saga({
         finder_action_keys = {
-            open = "gd",
+            open = "<CR>",
         },
     })
 

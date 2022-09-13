@@ -12,9 +12,10 @@ local function load_options()
         wildmenu = true,
         mousemodel = "popup",
         encoding = "utf-8",
+        completeopt = 'menuone,noselect',
 
         -- font
-        guifont = "Courier Prime Code,Monaco,Menlo,Courier New,monospace",
+        guifont = "VictorMono Nerd Font:h18",
 
         -- viewer
         syntax = "on",

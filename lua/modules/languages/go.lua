@@ -13,16 +13,25 @@ end
 -- M.lsp = coq.lsp_ensure_capabilities {
 M.lsp = {
     capabilities = lsp.capabilities,
-    cmd = { "gopls", "serve" },
+    on_attach = lsp.on_attach,
+    -- cmd = { "gopls", "serve" },
     settings = {
         gopls = {
             analyses = {
+                nilness = true,
                 unusedparams = true,
+                unusedwrite = true,
+                useany = true,
+                fieldalignment = true,
+                shadow = true,
             },
+            experimentalPostfixCompletions = true,
+            gofumpt = true,
+            staticcheck = true,
+            usePlaceholders = false,
+            completeUnimported = true,
         },
-        staticcheck = true,
     },
-    on_attach = lsp.on_attach,
 }
 
 -- https://github.com/williamboman/nvim-lsp-installer
