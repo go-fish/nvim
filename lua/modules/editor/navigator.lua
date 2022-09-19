@@ -12,7 +12,7 @@ M.Setup = function()
     require("navigator").setup({
         lsp_signature_help = true,
         lsp = {
-            enable = false,
+            enable = true,
         },
     })
 
