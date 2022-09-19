@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["guihua.lua"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/guihua.lua",
+    url = "https://github.com/ray-x/guihua.lua"
+  },
   ["hierarchy-tree-go.nvim"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/hierarchy-tree-go.nvim",
@@ -119,15 +124,15 @@ _G.packer_plugins = {
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
     url = "https://github.com/ray-x/lsp_signature.nvim"
   },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
-  },
   ["mini.nvim"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
+  },
+  ["navigator.lua"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/navigator.lua",
+    url = "https://github.com/ray-x/navigator.lua"
   },
   neon = {
     loaded = true,
@@ -169,6 +174,11 @@ _G.packer_plugins = {
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
   ["onedarkpro.nvim"] = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
@@ -184,10 +194,10 @@ _G.packer_plugins = {
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/seoul256.vim",
     url = "https://github.com/junegunn/seoul256.vim"
   },
-  ["structrue-go.nvim"] = {
+  ["windline.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/structrue-go.nvim",
-    url = "https://github.com/crusj/structrue-go.nvim"
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/windline.nvim",
+    url = "https://github.com/windwp/windline.nvim"
   }
 }
 

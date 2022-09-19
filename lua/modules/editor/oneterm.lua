@@ -8,6 +8,7 @@ M.Setup = function()
 
     -- open terminal
     mapping.Bind("n", "ft", ":OneTerm term<CR>")
+    mapping.Bind("t", "<C-d>", "<C-\\><C-n>")
 
     -- search files
     mapping.Bind("n", "ff", ":OneTerm files<CR>")

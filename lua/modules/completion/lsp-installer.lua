@@ -3,7 +3,7 @@ local config_path = vim.fn.stdpath "config"
 local lua_path = config_path .. "/lua/"
 local language_path = config_path .. "/lua/modules/languages/"
 
-M.Object = {"williamboman/nvim-lsp-installer"}
+M.Object = { "williamboman/nvim-lsp-installer" }
 
 M.Setup = function()
     local installer = require("nvim-lsp-installer")

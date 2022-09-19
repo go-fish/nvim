@@ -1,5 +1,5 @@
 local M = {}
 
-M.Object = {"neovim/nvim-lspconfig"}
+M.Object = { "neovim/nvim-lspconfig" }
 
 return M

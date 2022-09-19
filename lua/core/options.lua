@@ -15,7 +15,7 @@ local function load_options()
         completeopt = 'menuone,noselect',
 
         -- font
-        guifont = "VictorMono Nerd Font:h18",
+        --guifont = "VictorMono Nerd Font:h18",
 
         -- viewer
         syntax = "on",
@@ -64,7 +64,9 @@ local function load_options()
         wrap = true,
 
         -- buffer
-        scrolloff = 128
+        scrolloff = 128,
+
+        laststatus = 3
     }
 
     for k, v in pairs(options) do
