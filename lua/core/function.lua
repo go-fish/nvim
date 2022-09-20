@@ -10,9 +10,7 @@ M.goimports = function(wait_ms)
       if r.edit then
         local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or "utf-16"
         vim.lsp.util.apply_workspace_edit(r.edit, enc)
-      end
-      if type(r.command) == "table" then
-        vim.lsp.buf.execute_command(r.command)
+        print("res")
       end
     end
   end
