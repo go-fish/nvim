@@ -71,6 +71,13 @@ M.Setup = function()
             return ''
         end,
     }
+
+    local relativePath = function()
+        local p = vim.fn.getcwd() .. '/'
+        local s = vim.api.nvim_buf_get_name(0)
+        return (s:sub(0, #p) == p) and s:sub(#p+1) or s
+    end
+
     basic.file = {
         name = 'file',
         hl_colors = {
@@ -83,7 +90,7 @@ M.Setup = function()
                 return {
                     { b_components.cache_file_size(), 'default' },
                     { ' ', '' },
-                    { b_components.cache_file_name('[No Name]', 'unique'), 'magenta' },
+                    { relativePath(), 'magenta' },
                     { b_components.line_col_lua, 'white' },
                     { b_components.progress_lua, '' },
                     { ' ', '' },
@@ -93,7 +100,7 @@ M.Setup = function()
                 return {
                     { b_components.cache_file_size(), 'default' },
                     { ' ', '' },
-                    { b_components.cache_file_name('[No Name]', 'unique'), 'magenta' },
+                    { relativePath(), 'magenta' },
                     { ' ', '' },
                     { b_components.file_modified(' '), 'magenta' },
                 }

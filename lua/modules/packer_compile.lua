@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/chadtree",
     url = "https://github.com/ms-jpq/chadtree"
   },
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
+  },
   coq_nvim = {
     loaded = true,
     path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq_nvim",
