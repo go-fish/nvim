@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/hearfish/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,132 +76,137 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["OneTerm.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/OneTerm.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/OneTerm.nvim",
     url = "https://github.com/LoricAndre/OneTerm.nvim"
   },
   chadtree = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/chadtree",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/chadtree",
     url = "https://github.com/ms-jpq/chadtree"
   },
   ["coq.artifacts"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/coq.artifacts",
     url = "https://github.com/ms-jpq/coq.artifacts"
   },
   coq_nvim = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
   ["dap-buddy.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/dap-buddy.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/dap-buddy.nvim",
     url = "https://github.com/Pocco81/dap-buddy.nvim"
   },
   ["dashboard-nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
+  },
+  edge = {
+    loaded = true,
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/edge",
+    url = "https://github.com/sainnhe/edge"
   },
   ["fidget.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["guihua.lua"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/guihua.lua",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/guihua.lua",
     url = "https://github.com/ray-x/guihua.lua"
   },
   ["hierarchy-tree-go.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/hierarchy-tree-go.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/hierarchy-tree-go.nvim",
     url = "https://github.com/crusj/hierarchy-tree-go.nvim"
   },
   ["lsp_signature.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
     url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["mini.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
   },
   ["navigator.lua"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/navigator.lua",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/navigator.lua",
     url = "https://github.com/ray-x/navigator.lua"
   },
   neon = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/neon",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/neon",
     url = "https://github.com/rafamadriz/neon"
   },
   ["nvim-bufferline.lua"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
     url = "https://github.com/akinsho/nvim-bufferline.lua"
   },
   ["nvim-dap"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-dap-go"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
     url = "https://github.com/leoluz/nvim-dap-go"
   },
   ["nvim-dap-virtual-text"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
     url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-treesitter-context"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
   ["onedarkpro.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
     url = "https://github.com/olimorris/onedarkpro.nvim"
   },
   ["papercolor-theme"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/papercolor-theme",
     url = "https://github.com/NLKNguyen/papercolor-theme"
   },
   ["seoul256.vim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/seoul256.vim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/seoul256.vim",
     url = "https://github.com/junegunn/seoul256.vim"
   },
   ["windline.nvim"] = {
     loaded = true,
-    path = "/Users/hearfish/.local/share/nvim/site/pack/packer/start/windline.nvim",
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/windline.nvim",
     url = "https://github.com/windwp/windline.nvim"
   }
 }

@@ -10,4 +10,4 @@ require("core.autocmd")
 require("modules")
 
 vim.cmd [[set background=light]]
-vim.cmd [[colorscheme neon]]
+vim.cmd [[colorscheme edge]]
