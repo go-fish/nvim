@@ -15,9 +15,10 @@ M.Setup = function()
         },
         keymap = {
             pre_select = false,
+            jump_to_mark = "<S-tab>"
         },
         weights = {
-            prefix_matches = 6,
+            prefix_matches = 100,
         },
     }
 end

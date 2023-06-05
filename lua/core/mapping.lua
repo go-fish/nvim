@@ -17,6 +17,7 @@ M.Load = function()
     api.nvim_set_keymap("n", "j", "10j", {noremap = true})
     api.nvim_set_keymap("n", "gmt", "<cmd>!go mod tidy<CR>", { noremap = true })
     api.nvim_set_keymap("v", "cc", '"+y', { noremap = true })
+    api.nvim_set_keymap("n", "fh", ":LspRestart<CR>", { noremap = true })
 end
 
 return M
