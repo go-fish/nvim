@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/seoul256.vim",
     url = "https://github.com/junegunn/seoul256.vim"
   },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
   ["windline.nvim"] = {
     loaded = true,
     path = "/home/hearfish/.local/share/nvim/site/pack/packer/start/windline.nvim",
