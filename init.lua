@@ -1,2 +1,4 @@
-require("core")
+-- setup lazy
+require("plugins")
 
+require("core")

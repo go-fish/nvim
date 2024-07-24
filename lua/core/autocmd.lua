@@ -5,14 +5,11 @@ augroup(
     [[
 augroup config
     autocmd!
-    autocmd BufWritePre * :silent! lua vim.lsp.buf.formatting()
-    autocmd InsertLeave * :silent! lua vim.lsp.buf.formatting()
-    autocmd BufWritePost *.go :silent!gofmt -w %
-    autocmd BufWritePre *.go lua require'core.function'.goimports(1000)
-    autocmd VimEnter * :SymbolsOutline
     autocmd VimEnter * CHADopen --nofocus
+    autocmd VimEnter * SymbolsOutlineOpen
     autocmd FileType CHADtree setlocal number relativenumber
     autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+    autocmd BufWritePre *.go lua vim.lsp.buf.format({ async = true })
 augroup END        
     ]],
     true

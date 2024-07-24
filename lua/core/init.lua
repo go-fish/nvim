@@ -6,8 +6,10 @@ require("core.mapping").Load()
 -- add autocmd
 require("core.autocmd")
 
--- install modules
-require("modules")
+-- setup lsp
+require("core.lsp")
 
-vim.cmd [[set background=light]]
-vim.cmd [[colorscheme edge]]
+
+-- set colorscheme
+vim.cmd [[set background=dark]]
+vim.cmd [[colorscheme everforest]]

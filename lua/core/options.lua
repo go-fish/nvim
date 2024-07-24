@@ -11,6 +11,8 @@ local function load_options()
         selection = "inclusive",
         wildmenu = true,
         mousemodel = "popup",
+        -- mouse = "a",
+        mousemoveevent = true,
         encoding = "utf-8",
         completeopt = 'menuone,noselect',
 
@@ -32,6 +34,7 @@ local function load_options()
         expandtab = true, -- 空格代替tab
         autoindent = true, -- 自动缩进
         relativenumber = true, -- 显示行号
+        number = true,
         history = 10000,
         -- 搜索逐字符高亮
         hlsearch = true,
@@ -65,8 +68,8 @@ local function load_options()
 
         -- buffer
         scrolloff = 128,
-
-        laststatus = 3
+        laststatus = 3,
+        clipboard = "unnamedplus"
     }
 
     for k, v in pairs(options) do
@@ -75,4 +78,3 @@ local function load_options()
 end
 
 load_options()
-
