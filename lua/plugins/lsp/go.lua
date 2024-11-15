@@ -1,14 +1,16 @@
 local lsp = require("plugins.lsp.lsp")
 local config = require("lspconfig")
+local nvim_lsp = require('lspconfig')
 local M = {}
 
 M.Setup = function()
-    config.gopls.setup(lsp)
+    config.gopls.setup(M.lsp)
 end
 
 M.lsp = {
     capabilities = lsp.capabilities,
     on_attach = lsp.on_attach,
+    root_dir = nvim_lsp.util.root_pattern("go.work", "go.mod", ".git"),
     -- cmd = { "gopls", "serve" },
     settings = {
         gopls = {

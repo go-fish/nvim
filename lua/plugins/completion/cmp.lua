@@ -8,7 +8,6 @@ local M = { "hrsh7th/nvim-cmp", dependencies = {
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
     "onsails/lspkind-nvim",
-    "hrsh7th/cmp-copilot",
 } }
 
 M.config = function ()
@@ -24,8 +23,8 @@ M.config = function ()
 
     cmp.setup({
         sources = {
-            { name = 'copilot' },
             { name = 'nvim_lsp' },
+            { name = 'codeium' },
             { name = 'luasnip' },
             { name = 'buffer' },
             { name = 'path' },
