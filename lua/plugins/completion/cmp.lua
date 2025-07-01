@@ -8,7 +8,7 @@ local M = { "hrsh7th/nvim-cmp", dependencies = {
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
     "onsails/lspkind-nvim",
-    "hrsh7th/cmp-copilot",
+    "zbirenbaum/copilot-cmp"
 } }
 
 M.config = function ()
