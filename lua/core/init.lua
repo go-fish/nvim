@@ -12,4 +12,4 @@ require("core.lsp")
 
 -- set colorscheme
 vim.cmd [[set background=dark]]
-vim.cmd [[colorscheme everforest]]
+vim.cmd [[colorscheme gruvbox]]

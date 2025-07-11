@@ -15,7 +15,9 @@ M.config = function ()
     vim.keymap.set("n", "<leader>fi", "<cmd>lua require('fzf-lua').lsp_implementations()<CR>", { silent = true })
     vim.keymap.set("n", "<leader>fs", "<cmd>lua require('fzf-lua').lsp_document_symbols()<CR>", { silent = true })
     vim.keymap.set("n", "<leader>fd", "<cmd>lua require('fzf-lua').lsp_document_diagnostics()<CR>", { silent = true })
+    vim.keymap.set("n", "<leader>fwd", "<cmd>lua require('fzf-lua').lsp_workspace_diagnostics()<CR>", { silent = true })
     vim.keymap.set("n", "<leader>fa", "<cmd>lua require('fzf-lua').lsp_code_actions()<CR>", { silent = true })
+    vim.keymap.set("n", "<leader>gb", "<cmd>lua require('fzf-lua').git_blame()<CR>", { silent = true })
 end
 
 return M

@@ -18,7 +18,7 @@ M.config = function()
     local current_signature = function(width)
         if not pcall(require, 'lsp_signature') then return end
         local sig = require("lsp_signature").status_line(width)
-        return "🐼  " .. sig.label
+        return "   " .. sig.label
     end
 
     local basic = {}
@@ -61,9 +61,8 @@ M.config = function()
         text = function(bufnr)
             if lsp_comps.check_lsp(bufnr) then
                 return {
-                    { lsp_comps.lsp_error({ format = '   %s', show_zero = true }), 'red' },
-                    { lsp_comps.lsp_warning({ format = '   %s', show_zero = true }), 'yellow' },
-                    { lsp_comps.lsp_hint({ format = ' 󰢌  %s ', show_zero = true }), 'blue' },
+                    { lsp_comps.lsp_error({ format = '   %s ', show_zero = true }), 'red' },
+                    { lsp_comps.lsp_warning({ format = '   %s ', show_zero = true }), 'yellow' },
                 }
             end
             return ''
@@ -135,7 +134,7 @@ M.config = function()
                 return {
                     { git_comps.diff_added({ format = '   %s', show_zero = true }), 'green' },
                     { git_comps.diff_removed({ format = '   %s', show_zero = true }), 'red' },
-                    { git_comps.diff_changed({ format = '   %s', show_zero = true }), 'blue' },
+                    { git_comps.diff_changed({ format = '   %s', show_zero = true }), 'blue' },
                 }
             end
             return ''
